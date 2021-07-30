@@ -1,6 +1,6 @@
 import Foundation
 
-// LINKED LIST
+//MARK: - LINKED LIST
 
 class Node {
     var value: Int
@@ -18,7 +18,7 @@ class LinkedList {
         self.head = head
     }
     
-    //Append to Linked List
+    //Append an element to the Linked List
     func append(_ node: Node) {
         guard head != nil else {
             head = node
@@ -32,7 +32,7 @@ class LinkedList {
         current?.next = node
     }
     
-    //Get a node from Linked List
+    //Get an element from the Linked List
     func get(index: Int) -> Node? {
         guard index > 0 else {
             return nil
@@ -51,7 +51,7 @@ class LinkedList {
         return nil
     }
     
-    //Delete a node from Linked List
+    //Delete an element from the Linked List
     func delete(value: Int) {
         var current = head
         var previous: Node?
@@ -70,7 +70,7 @@ class LinkedList {
         }
     }
     
-    //Insert to Linked List
+    //Insert an element to the Linked List
     func insert(_ node: Node, index: Int) {
         guard index > 0 else {
             return
@@ -118,7 +118,7 @@ linkedList.delete(value: 1)
 print(linkedList.get(index: 1)!.value)  // 5
 
 
-// STACK
+//MARK: - STACK
 
 class Stack {
     
@@ -128,20 +128,18 @@ class Stack {
         self.linkedList = LinkedList(head: top)
     }
     
-    // add a node to the top of the stack
+    //Append an element to the top of the Stack
     func push(_ node: Node) {
         linkedList.insert(node, index: 1)
     }
     
-    // remove and return the topmost node from the stack
+    //Delete and return the topmost element from the Stack
     func pop() -> Node? {
-        
        let deletedNode = linkedList.get(index: 1)
         
         if let value = deletedNode?.value {
             linkedList.delete(value: value)
         }
-        
         return deletedNode
     }
 }
@@ -158,4 +156,3 @@ print(stack.pop()!.value) // 4
 print(stack.pop()!.value) // 3
 stack.push(n5)
 print(stack.pop()!.value) // 5
-
