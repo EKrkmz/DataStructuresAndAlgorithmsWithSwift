@@ -2,9 +2,9 @@
 
 You can find examples of data structures and algorithms with Swift in this repository. Right now there are 3 sections: 
 
-  1. [List Based Collections](1-list-based-collections)
-  2. [Searching and Sorting Algorithms](2-searching-and-sorting-algorithms)
-  3. [Maps](3-maps)
+  1. List Based Collections
+  2. Searching and Sorting Algorithms
+  3. Maps
 
 ## 1. List Based Collections
 
