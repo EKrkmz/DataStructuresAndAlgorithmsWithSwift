@@ -2,10 +2,9 @@
 
 You can find examples of data structures and algorithms with Swift in this repository. Right now there are 3 sections: 
 
-  1. <a href="https://github.com/EKrkmz/DataStructuresAndAlgorithmsWithSwift/new/main?readme=1#1-list-based-collections">List Based Collections</a>
-  2. <a href="https://github.com/EKrkmz/DataStructuresAndAlgorithmsWithSwift/new/main?readme=1#2-searching-and-sorting-algorithms">Searching and Sorting Algorithms </a>
-  3. <a href="https://github.com/EKrkmz/DataStructuresAndAlgorithmsWithSwift/new/main?readme=1#3-maps">Maps</a>
-  
+  1. [List Based Collections](1-list-based-collections)
+  2. [Searching and Sorting Algorithms](2-searching-and-sorting-algorithms)
+  3. [Maps](3-maps)
 
 ## 1. List Based Collections
 
@@ -49,6 +48,44 @@ You can find examples of data structures and algorithms with Swift in this repos
 - peek() returns the next element to be dequeued comes at the beginning of the Queue. You can return the first index of the array in this case.
 
 ## 2. Searching and Sorting Algorithms
+
+### Binary Search
+
+<img src="/images/binarysearch.jpeg">
+
+- Binary search searches an element from a sorted array by repeatedly dividing the array in half. 
+- If the searching element is less than the element in the middle of the interval, take the lower half as the interval. 
+- Take the upper half as the interval in a vice versa situation. 
+- This keeps going until the searched element is found or the interval is empty.
+
+### Bubble Sort
+
+<img src="/images/bubblesort.jpeg">
+
+- Bubble sort keeps swapping the near elements if they are in the wrong order. 
+- Worst case happens when the array is reverse sorted: O(n*n).
+- Best case happens when the array is already sorted: O(n). 
+- Because bubble sort uses only a constant amount of extra space for variables like temp, swap, etc. the space complexity is: O(1). 
+- Bubble sort is an in-place sorting algorithm. Therefore, it modifies elements of the original array to sort the given array.
+
+### Merge Sort
+
+<img src="/images/mergesort.png">
+
+- Merge Sort is a divide and conquer algorithm. This means: it divides the given array into two halves, calls itself for the two halves (recursion), after that merges the sorted halves. 
+- It repeats the whole process even if the array is already sorted. 
+- Merge Sort keeps divide the array into two halves. It takes linear time to merge two halves. That's why the time complexity of this algorithm is O(n log n) for all cases (best, average, and worst). 
+- Because the Merge Sort algorithm uses an extra space for the temporary array, the space complexity is O(n).
+
+### Quick Sort
+
+<img src="/images/quicksort.jpeg">
+
+- Quick Sort is also a divide and conquer algorithm just like Merge Sort. 
+- They both use recursion for sorting the elements. However, Quick Sort does not requires extra space, unlike Merge Sort. 
+- In Quick Sort algorithm, a pivot element must be chosen. 
+- The pivot element divides the array such all the elements smaller from the pivot are arranged to the left of the pivot and elements bigger than the pivot are arranged to the right of the pivot.
+
 
 ## 3. Maps
 
