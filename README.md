@@ -1,10 +1,11 @@
 # Data Structures And Algorithms With Swift
 
-You can find examples of data structures and algorithms with Swift in this repository. Right now there are 3 sections: 
+You can find examples of data structures and algorithms with Swift in this repository. Right now there are 4 sections: 
 
   1. List Based Collections
   2. Searching and Sorting Algorithms
   3. Maps
+  4. Trees
 
 ## 1. List Based Collections
 
@@ -94,3 +95,33 @@ You can find examples of data structures and algorithms with Swift in this repos
 - We can use Swift's built-in data structure Dictionary. 
 - A Dictionary contains key-value pairs, it is a type of hash table.
 - We can use types that conform to the Hashable protocol as keys. 
+
+## 4. Trees
+
+<img src="/images/tree.jpeg">
+
+- We can see tree data structure as an extension of a linked list. 
+- In a tree, the first element is called the root. 
+- Just like a linked list, a tree element can contain data and the next element. This is called a node. 
+- However, a tree can have several "next " elements, unlike a linked list. 
+- In trees, there is parent, child relationship between the nodes. A child can have only one parent. 
+- The nodes at the end that do not have any children are called the leaf.
+
+### Binary Tree
+
+- A binary tree is a kind of tree data structure that each node can have a maximum of two children.
+- Tree Traversal means passing through nodes in a specific order.
+- Tree Traversal means passing through nodes in a specific order. There are several kinds of traversal methods. You can find the preorder traversal method inside the example project.
+
+<img src="/images/treetraversal.jpeg">
+
+### Binary Search Trees
+
+<img src="/images/BST.png">
+
+- A Binary Search Tree is a specific kind of binary tree. 
+- For Binary Search Tree, there is a rule on how the values associated with each node are arranged.
+- BST's are sorted so every value on the left of a particular node is smaller than it and every value on the right of a particular node is larger than it. 
+- Thanks to this structure, we can do operations like insert, search and delete very fast.
+
+
